@@ -1,4 +1,4 @@
-using Newtonsoft.Json;
+п»їusing Newtonsoft.Json;
 using NUnit.Framework;
 using RestSharp;
 using System.Data.Common;
@@ -29,21 +29,21 @@ namespace WebTest
         public void Test1()
         {
             Assert.Greater(int.Parse(dsrz.Cases), 0);
-            // Проверка, что количество случаев заражения не отрицательное число
+            // РџСЂРѕРІРµСЂРєР°, С‡С‚Рѕ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃР»СѓС‡Р°РµРІ Р·Р°СЂР°Р¶РµРЅРёСЏ РЅРµ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ
         }
 
         [Test]
         public void Test2()
         {
             Assert.AreEqual("Oceania",dsrz.Continent);
-            // Проверка названия континента 
+            // РџСЂРѕРІРµСЂРєР° РЅР°Р·РІР°РЅРёСЏ РєРѕРЅС‚РёРЅРµРЅС‚Р° 
         }
 
         [Test]
         public void Test3()
         {
             Assert.IsTrue(dsrz.Countries.Count > 0);
-            // Количество стран на континенте - натуральное число
+            // РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂР°РЅ РЅР° РєРѕРЅС‚РёРЅРµРЅС‚Рµ - РЅР°С‚СѓСЂР°Р»СЊРЅРѕРµ С‡РёСЃР»Рѕ
         }
 
         [Test]
@@ -56,7 +56,7 @@ namespace WebTest
         public void Test5()
         {
             Assert.That(dsrz.Countries, Has.Member("Australia"));
-            // Среди стран присутствует Австралия
+            // РЎСЂРµРґРё СЃС‚СЂР°РЅ РїСЂРёСЃСѓС‚СЃС‚РІСѓРµС‚ РђРІСЃС‚СЂР°Р»РёСЏ
         }
     }
 }

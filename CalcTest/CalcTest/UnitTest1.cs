@@ -1,4 +1,4 @@
-using NUnit.Framework;
+п»їusing NUnit.Framework;
 
 namespace CalcTest
 {
@@ -12,7 +12,7 @@ namespace CalcTest
             Calculator.Methods s = new Calculator.Methods();
             double a = s.addition(x, y);
             double r = x + y;
-            Assert.AreEqual(r, a, "При X = {0}, Y = {1},\n  Результат сложения = {2},\n  Ожидаемый результат = {3}", x, y, a, r);
+            Assert.AreEqual(r, a, "РџСЂРё X = {0}, Y = {1},\n  Р РµР·СѓР»СЊС‚Р°С‚ СЃР»РѕР¶РµРЅРёСЏ = {2},\n  РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ = {3}", x, y, a, r);
         }
         [Test, Combinatorial]
         public void Test_Diff(
@@ -22,7 +22,7 @@ namespace CalcTest
             Calculator.Methods s = new Calculator.Methods();
             double a = s.difference(x, y);
             double r = x - y;
-            Assert.AreEqual(r, a, "При X = {0}, Y = {1},\n  Результат вычитания = {2},\n  Ожидаемый результат = {3}", x, y, a, r);
+            Assert.AreEqual(r, a, "РџСЂРё X = {0}, Y = {1},\n  Р РµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёС‚Р°РЅРёСЏ = {2},\n  РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ = {3}", x, y, a, r);
         }
         [Test, Combinatorial]
         public void Test_Mult(
@@ -32,7 +32,7 @@ namespace CalcTest
             Calculator.Methods s = new Calculator.Methods();
             double a = s.multiplication(x, y);
             double r = x * y;
-            Assert.AreEqual(r, a, "При X = {0}, Y = {1},\n  Результат произведения = {2},\n  Ожидаемый результат = {3}", x, y, a, r);
+            Assert.AreEqual(r, a, "РџСЂРё X = {0}, Y = {1},\n  Р РµР·СѓР»СЊС‚Р°С‚ РїСЂРѕРёР·РІРµРґРµРЅРёСЏ = {2},\n  РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ = {3}", x, y, a, r);
         }
         [Test, Combinatorial]
         public void Test_Div(
@@ -42,7 +42,7 @@ namespace CalcTest
             Calculator.Methods s = new Calculator.Methods();
             double a = s.division(x, y);
             double r = x / y;
-            Assert.AreEqual(r, a, "При X = {0}, Y = {1},\n  Результат деления = {2},\n  Ожидаемый результат = {3}", x, y, a, r);
+            Assert.AreEqual(r, a, "РџСЂРё X = {0}, Y = {1},\n  Р РµР·СѓР»СЊС‚Р°С‚ РґРµР»РµРЅРёСЏ = {2},\n  РћР¶РёРґР°РµРјС‹Р№ СЂРµР·СѓР»СЊС‚Р°С‚ = {3}", x, y, a, r);
         }      
     }
 }
